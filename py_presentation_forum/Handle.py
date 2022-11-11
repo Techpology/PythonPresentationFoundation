@@ -3,7 +3,7 @@ import tkinter as tk
 
 import json
 
-from Route import Route
+from py_presentation_forum.Route import Route
 
 class Handle:
 	def __init__(self, _title="pypf app"):
