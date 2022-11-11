@@ -6,11 +6,11 @@ import json
 from py_presentation_forum.Route import Route
 
 class Handle:
-	def __init__(self, _title="pypf app"):
+	def __init__(self, _conf={}, _title="pypf app"):
 		self.win	= tk.Tk()
 		self.title	= _title
 
-		self.config = self.getConfig("./config.json")
+		self.config = _conf
 
 		self.routes = Route()
 
@@ -22,6 +22,3 @@ class Handle:
 		self.win.title(self.title)
 		self.win.overrideredirect(1)
 		self.win.mainloop()
-	
-	def getConfig(self, _path):
-		return json.loads(_path)
