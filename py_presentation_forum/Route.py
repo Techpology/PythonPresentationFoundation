@@ -8,5 +8,7 @@ class Route:
 		self.events[_fn] = new
 	
 	def getEvent(self, _fn):
-		if(_fn in self.events):
-			self.events[_fn]()
+		_parsed = _fn.split(";")
+
+		if(_parsed[1] in self.events):
+			self.events[_fn](_parsed[1:])
