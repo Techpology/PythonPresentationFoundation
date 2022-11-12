@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.1b'
+VERSION = '1.0'
 DESCRIPTION = 'A html binding to Tkinter UI'
 LONG_DESCRIPTION = 'Allows for html to design software with python tkinter.'
 
