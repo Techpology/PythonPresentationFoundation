@@ -1,8 +1,11 @@
 from setuptools import setup, find_packages
+from pathlib import Path
 
-VERSION = '1.0'
+VERSION = '1.0.1'
 DESCRIPTION = 'A html binding to Tkinter UI'
-LONG_DESCRIPTION = 'Allows for html to design software with python tkinter.'
+
+this_directory = Path(__file__).parent
+LONG_DESCRIPTION = (this_directory / "README.md").read_text()
 
 # Setting up
 setup(
