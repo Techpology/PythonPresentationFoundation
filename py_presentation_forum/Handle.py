@@ -12,12 +12,13 @@ class Handle:
 
 		self.config = _conf
 
-		self.routes = Route()
+		print("--------")
+		self.routes = Route(self)
 
 		self.frame	= HtmlFrame(self.win)
 		self.frame.load_file(self.config["url"])
 		self.frame.on_url_change(self.routes.getEvent)
+		self.frame.on_done_loading(self.routes.getOnDone)
 		self.frame.pack(fill="both", expand=True)
 		
 		self.win.title(self.title)
-		self.win.mainloop()
