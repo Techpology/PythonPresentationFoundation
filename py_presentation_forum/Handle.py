@@ -12,7 +12,6 @@ class Handle:
 
 		self.config = _conf
 
-		print("--------")
 		self.routes = Route(self)
 
 		self.frame	= HtmlFrame(self.win)
