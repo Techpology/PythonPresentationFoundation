@@ -20,5 +20,4 @@ class Handle:
 		self.frame.pack(fill="both", expand=True)
 		
 		self.win.title(self.title)
-		self.win.overrideredirect(1)
 		self.win.mainloop()
