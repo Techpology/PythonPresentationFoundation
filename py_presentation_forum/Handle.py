@@ -15,7 +15,7 @@ class Handle:
 		self.routes = Route()
 
 		self.frame	= HtmlFrame(self.win)
-		self.frame.load_website(self.config["url"])
+		self.frame.load_file(self.config["url"])
 		self.frame.on_url_change(self.routes.getEvent)
 		self.frame.pack(fill="both", expand=True)
 		
